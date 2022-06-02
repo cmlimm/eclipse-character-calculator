@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title>Eclipse Phase: 1st Edition Character Calculator</title>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="author" content="Anton Motylev">
+        <meta name="description" content="Character Calculator for Eclipse Phase: 1st Edition">
+
+        <meta property="og:title" content="Eclipse Phase: 1st Edition Character Calculator">
+        <meta property="og:description" content="Character Calculator for Eclipse Phase: 1st Edition">
+        <!-- <meta property="og:image" content="/some-image.png"> -->
+        <meta property="og:url" content="/index.html">
+        <meta property="og:site_name" content="eclipse-character-calculator.github.io">
+
+        <meta name="twitter:card" content="Character Calculator for Eclipse Phase: 1st Edition">
+        <!-- <meta name="twitter:image:alt" content="image description"> -->
+
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="basic-info">
+            <div id="player-character" class="row">
+                <div class="row">
+                    <label for="player">Player</label>
+                    <input type="text" name="player" id="player">
+                </div>
+                <div class="row">
+                    <label for="character">Character</label>
+                    <input type="text" name="character" id="character">
+                </div>
+            </div>
+            <div id="background-faction" class="row">
+                <div class="select row">
+                    <label for="background">Background</label>
+                    <select name="background" id="background">
+                        <option value="background1">Background1</option>
+                        <option value="background2">Background2</option>
+                    </select>
+                </div>
+                <div class="select row">
+                    <label for="faction">Faction</label>
+                    <select name="faction" id="faction">
+                        <option value="faction1">Faction1</option>
+                        <option value="faction2">Faction2</option>
+                    </select>
+                </div>
+            </div>
+            <div id="aptitudes" class="row">
+                <div class="column short-name">
+                    <label for="cognition">COG</label>
+                    <input type="number" name="cognition" id="cognition" value=0>
+                </div>
+                <div class="column short-name">
+                    <label for="coordination">COO</label>
+                    <input type="number" name="coordination" id="coordination" value=0>
+                </div>
+                <div class="column short-name">
+                    <label for="intuition">INT</label>
+                    <input type="number" name="intuition" id="intuition" value=0>
+                </div>
+                <div class="column short-name">
+                    <label for="reflex">REF</label>
+                    <input type="number" name="reflex" id="reflex" value=0>
+                </div>
+                <div class="column short-name">
+                    <label for="savvy">SAV</label>
+                    <input type="number" name="savvy" id="savvy" value=0>
+                </div>
+                <div class="column short-name">
+                    <label for="somatics">SOM</label>
+                    <input type="number" name="somatics" id="somatics" value=0>
+                </div>
+                <div class="column short-name">
+                    <label for="willpower">WIL</label>
+                    <input type="number" name="willpower" id="willpower" value=0>
+                </div>    
+                <figure class="column short-name">
+                    <figcaption>Left:</figcaption>
+                    <span id="aptitude-points-left">105</span>
+                </figure>
+                <div class="add-remove column short-name">
+                    <button name="add-apt-point" type="button">
+                        +APT
+                    </button>
+                    <button name="remove-apt-point" type="button">
+                        -APT
+                    </button>
+                </div>
+            </div>
+            <div id="based-on-aptitudes" class="row">
+                <figure class="column short-name">
+                    <figcaption>TT</figcaption>
+                    <span id="trauma-threshold">0</span>
+                </figure>
+                <figure class="column short-name">
+                    <figcaption>LUC</figcaption>
+                    <span id="lucidity">0</span>
+                </figure>
+                <figure class="column short-name">
+                    <figcaption>IR</figcaption>
+                    <span id="insanity-rating">0</span>
+                </figure>
+                <figure class="column short-name">
+                    <figcaption>WT</figcaption>
+                    <span id="wound-threshold">0</span>
+                </figure>
+                <figure class="column short-name">
+                    <figcaption>DUR</figcaption>
+                    <span id="durability">0</span>
+                </figure>
+                <figure class="column short-name">
+                    <figcaption>DR</figcaption>
+                    <span id="death-rating">0</span>
+                </figure>
+                <figure class="column short-name">
+                    <figcaption>INIT</figcaption>
+                    <span id="initiative">0</span>
+                </figure>
+                <figure class="column short-name">
+                    <figcaption>SPD</figcaption>
+                    <span id="speed">0</span>
+                </figure>
+                <figure class="column short-name">
+                    <figcaption>DB</figcaption>
+                    <span id="damage-bonus">0</span>
+                </figure>
+            </div>
+            <div class="row">
+                <label for="native-tongue">Native tongue</label>
+                <input type="text" name="native-tongue" id="native-tongue">
+            </div>
+        </div>
+    </body>
+</html> 
