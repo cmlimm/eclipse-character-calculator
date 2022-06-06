@@ -13,17 +13,16 @@
     flex-direction: column;
     margin: 0.1rem;
 }
-#based-on-aptitudes > .column > span,
-#aptitudes > .column > span{
+.column > span {
     border-style: solid;
     border-width: 0.1rem;
     border-radius: 0.3rem;
 }
 .short-name {
-    width: 3rem;
+    width: 3.5rem;
 }
 .column > label,
-span, figcaption {
+span, figcaption, button {
     display: block;
     text-align: center;
 }
